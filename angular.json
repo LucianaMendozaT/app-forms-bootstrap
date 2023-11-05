@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app-froms-bootstrap": {
+    "app-forms-bootstrap": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app-froms-bootstrap",
+            "outputPath": "dist/app-forms-bootstrap",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,11 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.css", 
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/css/bootstrap.js"
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "app-froms-bootstrap:build:production"
+              "browserTarget": "app-forms-bootstrap:build:production"
             },
             "development": {
-              "browserTarget": "app-froms-bootstrap:build:development"
+              "browserTarget": "app-forms-bootstrap:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app-froms-bootstrap:build"
+            "browserTarget": "app-forms-bootstrap:build"
           }
         },
         "test": {
